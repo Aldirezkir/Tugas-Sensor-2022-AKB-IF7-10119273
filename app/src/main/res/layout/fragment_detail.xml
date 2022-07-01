@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".detailFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <RelativeLayout
+            android:paddingTop="20dp"
+            android:id="@+id/linear2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_home2"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/image_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear2"
+            android:layout_centerInParent="true"
+            android:src="@drawable/shape_line" />
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_shape"
+            android:layout_centerHorizontal="true"
+            android:letterSpacing="0.1"
+            android:fontFamily="@font/poppins_medium_italic"
+            android:paddingTop="10dp"
+            android:text="Day Tracker"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_2"
+            android:layout_centerHorizontal="true"
+            android:letterSpacing="0.1"
+            android:fontFamily="@font/poppins_medium_italic"
+            android:paddingTop="10dp"
+            android:text="Find You'r Location"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+        <ImageView
+            android:id="@+id/image_num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/shape_line" />
+
+    </RelativeLayout>
+</FrameLayout>
